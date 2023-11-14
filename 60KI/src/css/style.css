@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto' sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+/* Predefinições */
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centralize-horizontal {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .centralize-vertical {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Limpar margens e preenchimentos */
+  .no-margin {
+    margin: 0;
+  }
+  
+  .no-padding {
+    padding: 0;
+  }
+  
+  /* Texto centralizado */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Ocultar elemento */
+  .hidden {
+    display: none;
+  }
+  
+  /* Remover decoração de link */
+  .no-decoration {
+    text-decoration: none;
+  }
+  
+  /* Botões padrão */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .button-primary {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .button-secondary {
+    background-color: #fff;
+    color: #3498db;
+  }
+  
+  /* Formulário básico */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Layout de grade simples */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex-basis: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .col {
+      flex: 1;
+    }
+  }
+  
+

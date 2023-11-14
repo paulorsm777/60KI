@@ -1,0 +1,27 @@
+.container-home{
+    flex-direction: row;
+    width: 100%;
+}
+
+.slogan h1{
+    font-size: 6rem;
+    padding: 2rem;
+}
+
+.homeImg {
+    height: 80%;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col1 button{
+    font-size: 3rem;
+    border: none;   
+    padding: 14px;
+    background: linear-gradient(to right, #4e1368, #c024a6);
+    border-radius: 30px;
+    cursor: pointer;
+}

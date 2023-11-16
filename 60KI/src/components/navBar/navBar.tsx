@@ -1,21 +1,23 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "../../css/style.css";
 import "./navBar.css";
 import logo from "../../assets/chair.png";
 
-const Navbar = () => {
+export default function Navbar() {
+
   return (
     <div className="navbar">
-      <div className="logo centralize">
-        <img src={logo} alt="Descrição da imagem" height="0rem" />
+      <Link to="/" className="logo centralize">
+        <img src={logo} alt="Descrição da imagem" height="40rem" />
         <p>60kI</p>
-      </div>
+      </Link>
       <div className="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
+        <Link to="/login">Login</Link>
+        <Link to="/register">Registrar</Link>
+        <Link to="/about">Sobre</Link>
+        <Link to="/contact">Contato</Link>
       </div>
     </div>
   );
 };
-
-export default Navbar;

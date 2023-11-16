@@ -1,6 +1,8 @@
 import HomeImg from "../../assets/homeimg.png";
 import './home.css';
 import '../../css/style.css';
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <>
@@ -10,9 +12,7 @@ export default function Home() {
           <h1>Seu assento ideal!</h1>
         </div>
         <div className="about centralize-horizontal">
-          <a href="/pagina-de-destino">
-  <button type="button">Saiba mais</button>
-</a>
+        <Link to="/login"><button type="button">Saiba mais</button></Link>
         </div>
         </div>
         <div className="imgBox">

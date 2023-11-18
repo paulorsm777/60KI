@@ -23,11 +23,12 @@ export default function login() {
             <h1>Login</h1>
             <LoginForm onLogin={handleLogin} />
         </div>
+        <div className="space"></div>
         <div className="imgBox">
           <img
             src={LoginImg}
             alt="HomeImg"
-            style={{ maxWidth: "100%", maxHeight: "90%" }}
+            style={{ width: '90%' }}
             className="LoginImg"
           />
         </div>

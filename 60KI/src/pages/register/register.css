@@ -1,16 +1,28 @@
-/* Login Form*/
-.login-from h1{
+/* register Form*/
+.register-from h1{
     font-size: 6rem;
+    display: flex;
+    
 }
 
-.login-from {
-    width: 40%;
-    flex-direction: column;
-}
-
-.login-from  form{
+.register-from {
     width: 50%;
     flex-direction: column;
+}
+
+.register-form  form{
+    width: 70%;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.inputBox {
+    width: 100%;
+}
+
+.space {
+    width: 20%;
 }
 
 .data-input {
@@ -20,6 +32,10 @@
     border-radius: 18px;
     width: 100%;
     text-align: center;
+}
+
+.questionBox {
+    color: black;
 }
 
 .data-input:hover {
@@ -41,7 +57,7 @@
     border-radius: 30px;
     cursor: pointer;
     color: black;
-    width: 50%;
+    width: fit-content;
 }
 
 .data-button:hover {
@@ -54,13 +70,13 @@
 }
 
 /* Image */
-.container-login{
+.container-register{
     flex-direction: row;
     width: 100%;
 }
 
-.slogan h1{
-    font-size: 7rem;
+.submit-form h1{
+    font-size: 5rem;
     padding: 2rem;
     margin-left: 3rem;
 }

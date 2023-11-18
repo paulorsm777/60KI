@@ -13,6 +13,10 @@
     flex-direction: column;
 }
 
+.space{
+    width: 20%;
+}
+
 .data-input {
     background-color: transparent;
     border: 1px solid white;

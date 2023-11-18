@@ -1,36 +1,41 @@
-import LoginImg from "../../assets/homeimg.png";
+import React from "react";
+import RegisterImg from "../../assets/homeimg.png";
 import "./register.css";
-import '../../css/style.css'
 import "../../css/style.css";
 import { useNavigate } from "react-router-dom";
-import RegisterForm from "../../js/auth/LoginForm";
+import RegisterForm from "../../js/auth/RegisterForm";
 
-export default function register() {
-    const navigate = useNavigate();
-  const handleLogin = (email: string, password: string) => {
+export default function Register() {
+  const navigate = useNavigate();
+
+  const handleRegister = (
+    email: string,
+    password: string,
+    recoveryQuestion: string,
+    recoveryAnswer: string
+  ) => {
+    // Lógica de autenticação (substitua pelo seu método de autenticação real)
     if (email === "usuario@exemplo.com" && password === "123") {
-      console.log("Login bem-sucedido!");
+      console.log("Registro bem-sucedido!");
+      console.log("Email:", email);
+      console.log("Senha:", password);
+      console.log("Pergunta de recuperação:", recoveryQuestion);
+      console.log("Resposta de recuperação:", recoveryAnswer);
       navigate("/");
     } else {
       console.log("Credenciais inválidas!");
     }
   };
+
   return (
-    <>
-      <div className="container-login centralize">
-        <div className="login-from centralize">
-            <h1>Register</h1>
-            <RegisterForm onLogin={handleLogin} />
-        </div>
-        <div className="imgBox">
-          <img
-            src={LoginImg}
-            alt="HomeImg"
-            style={{ maxWidth: "100%", maxHeight: "90%" }}
-            className="LoginImg"
-          />
-        </div>
+    <div className="container-register centralize">
+      <div className="register-form centralize">
+        <RegisterForm onRegister={handleRegister} />
       </div>
-    </>
+      <div className="space"></div>
+      <div className="imgBox">
+        <img src={RegisterImg} alt="RegisterImg" style={{ width: '90%' }} className="RegisterImg" />
+      </div>
+    </div>
   );
 }

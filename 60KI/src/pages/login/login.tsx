@@ -4,7 +4,6 @@ import '../../css/style.css'
 import "../../css/style.css";
 import { useNavigate } from "react-router-dom";
 import LoginForm from "../../js/auth/LoginForm";
-import Home from "../Home/home";
 
 export default function login() {
   const navigate = useNavigate();

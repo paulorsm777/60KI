@@ -1,4 +1,3 @@
-import React from "react";
 import RegisterImg from "../../assets/homeimg.png";
 import "./register.css";
 import "../../css/style.css";

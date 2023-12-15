@@ -1,0 +1,35 @@
+.table {
+    margin-top: 2rem;
+}
+
+.table.disabled {
+    .deskBody {
+        background-color: rgba(240, 248, 255, 0.308);
+        color: black;
+    }
+}
+
+.seatsImg {
+    display: flex;
+    flex-direction: row;
+}
+
+.deskBody {
+    text-align: center;
+    background-color: rgb(51, 20, 20);
+    padding: 1rem;
+    width: 4rem;
+}
+
+.deskBody:hover {
+    opacity: 50%;
+}
+
+.table.selected {
+    background-color: green;
+}
+
+.deskBody.selected {
+    background-color: green;
+    color: white;
+}

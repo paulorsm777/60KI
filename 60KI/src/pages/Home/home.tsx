@@ -2,10 +2,12 @@ import HomeImg from "../../assets/homeimg.png";
 import './home.css';
 import '../../css/style.css';
 import { Link } from "react-router-dom";
+import Navbar from "../../components/navBar/navBar";
 
 export default function Home() {
   return (
     <>
+    <Navbar />
       <div className="container-home centralize">
         <div className="col1">
         <div className="slogan">

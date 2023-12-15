@@ -1,0 +1,64 @@
+.ambientSelect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 2rem;
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: transparent;
+    border: 4px white solid;
+    border-radius: 60px;
+    font-size: 3rem;
+    padding: 2rem;
+    margin-right: 20px;
+    width: 20rem;
+}
+
+button:hover{
+    opacity: 40%;
+}
+
+button.selected{
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.ambientList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+button.send{
+    border: 4px green solid;
+}
+
+.deskSelect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.deskGrid{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.selectDeskButton{
+    padding: 1rem;
+    margin-top: 2rem;
+}
